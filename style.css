@@ -1,0 +1,46 @@
+nav {
+    background-color: #31e619;
+}
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li {
+    background-color: #31e619;
+}
+nav a {
+    display:block;
+    padding:0 10px;
+    color:rgb(252, 0, 0);
+    padding: 20px;
+    text-decoration:none;
+}
+nav a:hover {
+    background-color: #d9ff00;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+nav ul li:hover > ul {
+    display:inherit;
+}
+nav ul ul li {
+    min-width:270px;
+    position: relative;
+}
+nav ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+body {
+    background: blue;
+    font-size: 30px;
+}
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
